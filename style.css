@@ -183,8 +183,7 @@ body {
       font-size: 150px;
     }
   }
-  </style>
-  <style>
+  
     body {
   margin: 0;
   }
@@ -211,6 +210,8 @@ body {
 @media screen and (min-width: 1026px) {
   #myVideo{
   /* margin-top: 50px; */
+      width: 100vh;
+      height: 100vw;
     }
     .content {
       top: 75%;
@@ -227,6 +228,8 @@ body {
 @media screen and (max-width: 1025px) {
   #myVideo{
   /* margin-top: 50px; */
+  width: 100vh;
+      height: 100vw;
     }
     .content {
       top: 75%;
@@ -244,6 +247,8 @@ body {
   @media screen and (max-width: 769px) {
     #myVideo{
   /* margin-top: 50px; */
+  width: 100vh;
+      height: 100vw;
     }
     .content {
       top:470px ;
@@ -260,6 +265,8 @@ body {
   @media screen and (max-width: 480px) {
     #myVideo{
       /* margin-top: 50px; */
+      width: 100vh;
+      height: 100vw;
     }
     .content {
       font-size: 10px;
@@ -279,6 +286,8 @@ padding: 0px !important;
   @media screen and (max-width: 376px) {
     #myVideo{
   /* margin-top: 50px; */
+  width: 100vh;
+      height: 100vw;
     }
     .content {
       font-size: 10px;
@@ -297,6 +306,8 @@ padding: 0px !important;
   @media screen and (max-width: 321px) {
     #myVideo{
       /* margin-top: 50px; */
+      width: 100vh;
+      height: 100vw;
     }
     .content {
       font-size: 11px;
