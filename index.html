@@ -12,332 +12,11 @@
   
   <script src="jquery-3.5.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-  body {
-    font: 400 15px Lato, sans-serif;
-    line-height: 1.8;
-    color: #818181;
-    font-weight:bold ;
-  }
-  h2 {
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #303030;
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-  h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    color: #303030;
-    font-weight: 400;
-    margin-bottom: 30px;
-  }  
-  .jumbotron {
-    background-color: #f4511e;
-    color: #fff;
-    padding: 100px 25px;
-    font-family: Montserrat, sans-serif;
-  }
-  .container-fluid {
-    padding: 60px 50px;
-  }
-  .bg-grey {
-    background-color: #f6f6f6;
-  }
-  .logo-small {
-    color: #f4511e;
-    font-size: 50px;
-  }
-  .logo {
-    color: #f4511e;
-    font-size: 200px;
-  }
-  .thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-  }
-  .thumbnail img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-  }
-  .carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #f4511e;
-  }
-  .carousel-indicators li {
-    border-color: #f4511e;
-  }
-  .carousel-indicators li.active {
-    background-color: #f4511e;
-  }
-  .item h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    font-weight: 400;
-    font-style: italic;
-    margin: 70px 0;
-  }
-  .item span {
-    font-style: normal;
-  }
-  .panel {
-    border: 1px solid #f4511e; 
-    border-radius:0 !important;
-    transition: box-shadow 0.5s;
-  }
-  .panel:hover {
-    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-  .panel-footer .btn:hover {
-    border: 1px solid #f4511e;
-    background-color: #fff !important;
-    color: #f4511e;
-  }
-  .panel-heading {
-    color: #fff !important;
-    background-color: #f4511e !important;
-    padding: 25px;
-    border-bottom: 1px solid transparent;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-  .panel-footer {
-    background-color: white !important;
-  }
-  .panel-footer h3 {
-    font-size: 32px;
-  }
-  .panel-footer h4 {
-    color: #aaa;
-    font-size: 14px;
-  }
-  .panel-footer .btn {
-    margin: 15px 0;
-    background-color: #f4511e;
-    color: #fff;
-  }
-  .navbar {
-    margin-bottom: 0;
-    background-color: #f4511e;
-    background-color: #02ae88;
-    background-color: gray;
-
-    background: none;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-  }
-
-  .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
-    background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-  }
-  footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #f4511e;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-      width: 100%;
-      margin-bottom: 35px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-      font-size: 150px;
-    }
-  }
-  </style>
-  <style>
-    body {
-  margin: 0;
-  }
-
-  #myVideo {
-  position: relative;
-  right: 0;
-  left:0;
-  bottom: 0;
-  width: 100vw; 
-  max-height: 100vh;
-}
-.content {
-  text-align: center;
-  position: absolute;
-  top: 50vh;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  right: 0px;
+ 
+ 
+  <link rel="stylesheet" href="style.css">
+ 
   
-  z-index: 1;
-}
-@media screen and (min-width: 1026px) {
-  #myVideo{
-  /* margin-top: 50px; */
-    }
-    .content {
-      top: 75%;
-    }
-    .title_font_size{
-      font-size: 23px;
-    
-    }
-    #myBtn{
-      width: 100px;
-  padding: 10px;
-    }
-  }
-@media screen and (max-width: 1025px) {
-  #myVideo{
-  /* margin-top: 50px; */
-    }
-    .content {
-      top: 75%;
-    }
-    .title_font_size{
-      font-size: 14px;
-    
-    }
-    #myBtn{
-      width: 100px;
-  padding: 10px;
-    }
-  }
-
-  @media screen and (max-width: 769px) {
-    #myVideo{
-  /* margin-top: 50px; */
-    }
-    .content {
-      top:470px ;
-    }
-    .title_font_size{
-      font-size: 14px;
-    
-    }
-    #myBtn{
-      width: 100px;
-  padding: 10px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    #myVideo{
-      /* margin-top: 50px; */
-    }
-    .content {
-      font-size: 10px;
-      top: 26%;
-      padding: 5px;
-
-    }
-    .title_font_size{
-      font-size: 12px;
-    }
-    #myBtn{
-      width: 70px;
-padding: 0px !important;
-
-    }
-  }
-  @media screen and (max-width: 376px) {
-    #myVideo{
-  /* margin-top: 50px; */
-    }
-    .content {
-      font-size: 10px;
-      top: 29%;
-      padding: 5px;
-    }
-    .title_font_size{
-      font-size: 11px;
-    }
-    #myBtn{
-      width: 70px;
-      padding: 0px !important;
-
-    }
-  }
-  @media screen and (max-width: 321px) {
-    #myVideo{
-      /* margin-top: 50px; */
-    }
-    .content {
-      font-size: 11px;
-      top: 31%;
-    }
-    .title_font_size{
-      font-size: 12px;
-      margin: 0px !important;
-    }
-    #myBtn{
-      width: 70px;
-      padding: 0px !important;
-    }
-  }
-
-#myBtn {
-  
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  /* background: #ddd; */
-  /* color: black; */
-}
-  </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -369,12 +48,12 @@ padding: 0px !important;
   Your browser does not support HTML5 video.
 </video>
 
-<div class="d-none">
+<!-- <div class="d-none">
 <div class="content ">
   <p class="title_font_size">Green Globule</p>
    <button class="title_font_size" id="myBtn" onclick="myFunction()">Pause</button>
 </div>
-</div>
+</div> -->
 
 
 <script>
@@ -391,6 +70,35 @@ padding: 0px !important;
     }
   }
   </script>
+  
+<!-- دکمه دانلود -->
+
+<div class="text-center w-responsive mx-auto mb-5"> 
+  <row>
+<!-- <p style="padding: 10px; font-size: 20px;">هوشمند زندگی کن</p> -->
+
+<p style="padding: 10px; font-size: 28px;">LIVE SMART</p>
+
+<p style="padding: 10px; font-size: 16px;">Our brochure is here</p>
+
+  <a href="broshure.pdf" download>
+    <button class="download_btn"><i class="fa fa-download"></i> 
+  Download </button></a>
+</row>
+</div>
+<hr style="height: 1px;border-width:0;color:gray;background-color:gray">
+
+
+<div class="text-center w-responsive mx-auto mb-5"> 
+  <row>
+<p style="padding: 10px; font-size: 16px;">Our Units</p>
+<div class="col-md-12 col-sm-12" style="text-align: center;">
+<img src="unit.jpeg" alt="" style="width: 50vw; padding-bottom: 5%;">
+</div>
+</row>
+</div>
+
+
 <!-- <div class="jumbotron text-center"> -->
   <!-- <h1>Company</h1> 
   <p>We specialize in blablabla</p>  -->
@@ -625,9 +333,6 @@ padding: 0px !important;
     </div>
     <div class="col-sm-7 slideanim">
       <div class="row">
-        <form action="email.php" method="POST">
-          اطلاعات فرم
-          </form>
         <div class="col-sm-6 form-group">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
         </div>
@@ -647,18 +352,20 @@ padding: 0px !important;
 
 
 <!--Section: Contact v.2-->
-<section class="mb-4" style="padding: 20px;">
+<section id="contact" class="mb-4" style="padding: 20px;">
 
   <!--Section heading-->
   <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
   <!--Section description-->
+
   <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
       a matter of hours to help you.</p>
 
   <div class="row">
 
       <!--Grid column-->
-      <div class="col-md-7 mb-md-0 mb-5">
+      <div class="col-md-1"></div>
+      <div class="col-md-6 mb-md-0 mb-5" style="padding-top: 30px";>
           <form id="contact-form" name="contact-form" action="mail.php" method="POST"  onsubmit="return validateForm()">
 
               <!--Grid row-->
@@ -667,8 +374,8 @@ padding: 0px !important;
                   <!--Grid column-->
                   <div class="col-md-6">
                       <div class="md-form mb-0">
+                        <label for="name" class="">Your name</label>
                           <input type="text" id="name" name="name" class="form-control">
-                          <label for="name" class="">Your name</label>
                       </div>
                   </div>
                   <!--Grid column-->
@@ -676,8 +383,8 @@ padding: 0px !important;
                   <!--Grid column-->
                   <div class="col-md-6">
                       <div class="md-form mb-0">
+                        <label for="email" class="">Your email</label>
                           <input type="text" id="email" name="email" class="form-control">
-                          <label for="email" class="">Your email</label>
                       </div>
                   </div>
                   <!--Grid column-->
@@ -689,8 +396,8 @@ padding: 0px !important;
               <div class="row">
                   <div class="col-md-12">
                       <div class="md-form mb-0">
+                        <label for="subject" class="">Subject</label>
                           <input type="text" id="subject" name="subject" class="form-control">
-                          <label for="subject" class="">Subject</label>
                       </div>
                   </div>
               </div>
@@ -703,8 +410,8 @@ padding: 0px !important;
                   <div class="col-md-12">
 
                       <div class="md-form">
+                        <label for="message">Your message</label>
                           <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                          <label for="message">Your message</label>
                       </div>
 
                   </div>
@@ -712,21 +419,20 @@ padding: 0px !important;
               <!--Grid row-->
 
           </form>
-          <div class="text-center text-md-left">
+          <div class="text-center text-md-left" style="padding-top:10px ;">
               <!-- <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a> -->
               <!-- <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a> -->
-              <a class="btn btn-primary" onclick="validateForm();">Send</a>
+              <a class="btn" style="background-color: #009783; color: honeydew;" onclick="validateForm();" >Send</a>
           </div>
-          <div class="status" id="status">    </div>
+          <div class="status" id="status"></div>
       </div>
       <!--Grid column-->
 
       <!--Grid column-->
-      <div class="col-sm-5">
-        <p>Contact us and we'll get back to you within 24 hours.</p>
-        <p><span class="glyphicon glyphicon-map-marker"></span> Tehran, IRAN</p>
-        <p><span class="glyphicon glyphicon-phone"></span> +98 9128170425</p>
-        <p><span class="glyphicon glyphicon-envelope"></span> reza.daseman@gmail.com</p>
+      <div class="col-sm-4" style="text-align: center; padding: 20px; padding-top: 40px;">
+        <p><span class="glyphicon glyphicon-map-marker" style="color: #009783;"></span><br> Tehran, IRAN</p>
+        <p><span class="glyphicon glyphicon-phone"style="color: #009783;"></span><br> +98 9128170425</p>
+        <p><span class="glyphicon glyphicon-envelope" style="color: #009783;"></span><br> reza.daseman@gmail.com</p>
       </div>
       <!-- <div class="col-md-4 text-center">
           <ul class="list-unstyled mb-0">
@@ -800,8 +506,6 @@ $(document).ready(function(){
 </script>
 
 
-
-
 // <!-- js form -->
 <script>
   function validateForm() {
@@ -863,6 +567,5 @@ $('#status').text(jqXHR);
 }
 });
 </script>
-
 </body>
 </html>
